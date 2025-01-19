@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Images/logo colored.png" type="image/x" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pixi Elegance | Custom Features</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="main page" id="main">
+        <div class="main__company">
+          <img
+            src="images/logo colored.png"
+            alt="Logo"
+            class="main__company--img"
+          />
+          <h1 class="main__company--header">
+            <span class="main__company--header--main">Pixi Elegance</span>
+            <span class="main__company--header--sub">Additional Features</span>
+          </h1>
+        </div>
+        <div class="main__features">
+          <figure class="main__features--fig">
+            <button class="main__features--btn" data-name="ascend">
+              <ion-icon
+                name="paper-plane"
+                class="main__features--icon"
+              ></ion-icon>
+            </button>
+            <span class="main__features--caption">Ascend Effect</span>
+          </figure>
+        </div>
+      </div>
+      <div class="ascend page hide--display" id="ascend">
+        <div class="ascend__grid">
+          <div class="ascend__grid--card">
+            <img
+              src="images/Ascend/bruce.jpg"
+              alt="Male"
+              class="ascend__grid--img"
+            />
+            <h2 class="ascend__grid--name">Dr Bruce Banner</h2>
+            <ul class="ascend__grid--list">
+              <li class="ascend__grid--item">31 years old</li>
+              <li class="ascend__grid--item">Barcelona, Spain</li>
+              <li class="ascend__grid--item">Scientist</li>
+            </ul>
+          </div>
+          <div class="ascend__grid--card">
+            <img
+              src="images/Ascend/black.jpg"
+              alt="Female"
+              class="ascend__grid--img"
+            />
+            <h2 class="ascend__grid--name">Ms Black Widow</h2>
+            <ul class="ascend__grid--list">
+              <li class="ascend__grid--item">27 years old</li>
+              <li class="ascend__grid--item">Delhi, India</li>
+              <li class="ascend__grid--item">Dancer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ascend__move">
+          <button class="promotion__goto">&downarrow;</button>
+        </div>
+      </div>
+      <div class="promotion page hide--display" id="promotion">
+        <div class="promotion__move">
+          <button class="promotion__back">&leftarrow;</button>
+        </div>
+        <div class="promotion__lines">
+          <h2 class="promotion__lines--header">Add This!</h2>
+          <h2 class="promotion__lines--sub">To Your E-Invite Template</h2>
+        </div>
+        <div class="promotion__command">
+          <h2 class="promotion__command--order">Order via WhatsApp / TikTok</h2>
+          <img
+            src="images/logo colored.png"
+            alt="Logo"
+            class="main__company--img"
+            id="logo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
