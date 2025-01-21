@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "svgo": "^3.3.2"
   }
 }
