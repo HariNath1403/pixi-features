@@ -3,8 +3,9 @@ const websiteUrl = "https://pixi-elegance.netlify.app/";
 const mainPage = document.getElementById("main");
 const promotionPage = document.getElementById("promotion");
 const ascendPage = document.getElementById("ascend");
+const accordionPage = document.getElementById("accordion");
 
-const allPages = [mainPage, promotionPage, ascendPage];
+const allPages = [mainPage, promotionPage, ascendPage, accordionPage];
 
 const featuresBtn = document.querySelectorAll(".main__features--btn");
 const goToPromotionBtn = document.querySelectorAll(".promotion__goto");

@@ -89,6 +89,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
+  align-items: center;
 }
 
 .main__features--fig {
@@ -119,6 +120,99 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+/* Promotion */
+
+.promotion__goto {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: var(--main-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.promotion__move {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.promotion__back {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+:root {
+  --background-color: #f9f9f9;
+  --primary-color: #265c4b;
+  --secondary-color: #bf3641;
+  --accent-color: #e69522;
+  --text-color-dark: #223240;
+  --text-color-light: #ffffff;
+}
+
+.promotion {
+  padding: 36px 24px;
+  background-color: var(--background-color);
+  text-align: center;
+}
+
+.promotion__lines {
+  margin-bottom: 24px;
+}
+
+.promotion__lines--header {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+  margin-top: 24px;
+}
+
+.promotion__lines--sub {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary-color);
+  margin: 18px 0;
+}
+
+.promotion__command {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.promotion__command--order {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main__company--img {
+  width: 160px;
+  height: auto;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 24px;
+}
+
+.main__company--img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Ascend Feature */
@@ -237,95 +331,26 @@ body {
   right: 16px;
 }
 
-/* Promotion */
-
-.promotion__goto {
-  padding: 8px 12px;
-  font-size: 16px;
-  background-color: var(--main-color);
-  color: var(--background-color);
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
-
-.promotion__move {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
-
-.promotion__back {
-  padding: 8px 12px;
-  font-size: 16px;
-  background-color: var(--secondary-color);
-  color: var(--background-color);
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-}
-
-:root {
-  --background-color: #f9f9f9;
-  --primary-color: #265c4b;
-  --secondary-color: #bf3641;
-  --accent-color: #e69522;
-  --text-color-dark: #223240;
-  --text-color-light: #ffffff;
-}
-
-.promotion {
-  padding: 36px 24px;
+/* Accordion */
+.accordion.page {
+  padding-top: 96px;
   background-color: var(--background-color);
-  text-align: center;
 }
 
-.promotion__lines {
-  margin-bottom: 24px;
-}
-
-.promotion__lines--header {
-  font-size: 36px;
-  font-weight: bold;
-  color: var(--primary-color);
-  margin: 0;
-  margin-top: 24px;
-}
-
-.promotion__lines--sub {
-  font-size: 24px;
-  font-weight: 500;
-  color: var(--secondary-color);
-  margin: 18px 0;
-}
-
-.promotion__command {
+.accordion__img {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-top: 24px;
+  justify-content: center;
+  padding: 24px;
+  display: none;
 }
 
-.promotion__command--order {
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--accent-color);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.main__company--img {
-  width: 160px;
+.accordion__img img {
+  width: 128px;
   height: auto;
-  border: 2px solid var(--primary-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 24px;
 }
 
-.main__company--img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.accordion__move {
+  position: absolute;
+  top: 28px;
+  right: 28px;
 }
