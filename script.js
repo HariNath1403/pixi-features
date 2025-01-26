@@ -4,8 +4,15 @@ const mainPage = document.getElementById("main");
 const promotionPage = document.getElementById("promotion");
 const ascendPage = document.getElementById("ascend");
 const accordionPage = document.getElementById("accordion");
+const cardsPage = document.getElementById("cards");
 
-const allPages = [mainPage, promotionPage, ascendPage, accordionPage];
+const allPages = [
+  mainPage,
+  promotionPage,
+  ascendPage,
+  accordionPage,
+  cardsPage,
+];
 
 const featuresBtn = document.querySelectorAll(".main__features--btn");
 const goToPromotionBtn = document.querySelectorAll(".promotion__goto");
