@@ -5,6 +5,7 @@ const promotionPage = document.getElementById("promotion");
 const ascendPage = document.getElementById("ascend");
 const accordionPage = document.getElementById("accordion");
 const cardsPage = document.getElementById("cards");
+const navBarPage = document.getElementById("bar");
 
 const allPages = [
   mainPage,
@@ -12,6 +13,7 @@ const allPages = [
   ascendPage,
   accordionPage,
   cardsPage,
+  navBarPage,
 ];
 
 const featuresBtn = document.querySelectorAll(".main__features--btn");
@@ -60,4 +62,23 @@ goToHome.addEventListener("click", (e) => {
 // Logo
 document.getElementById("logo").addEventListener("click", function () {
   window.open(websiteUrl);
+});
+
+// NavBar
+// Select all nav links
+const navBarLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+// Select the navbar collapse element
+const navbarCollapse = document.getElementById("navbarNavAltMarkup");
+
+navBarLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Check if the navbar is expanded (visible)
+    const isExpanded = navbarCollapse.classList.contains("show");
+    if (isExpanded) {
+      // Collapse the navbar
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      navbarToggler.click();
+    }
+  });
 });

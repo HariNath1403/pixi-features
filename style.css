@@ -331,6 +331,10 @@ body {
   right: 16px;
 }
 
+.ascend__move--alt--1 {
+  top: 84px;
+}
+
 /* Accordion */
 .accordion.page {
   padding-top: 96px;
@@ -424,4 +428,41 @@ body {
   font-size: 12px;
   text-align: center;
   padding: 0 4px;
+}
+
+/* Bar */
+.bar__navbar {
+  background-color: var(--secondary-color);
+  color: white;
+  z-index: 10;
+}
+
+.bar__navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.bar__navbar.fixed-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bar__section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.bar__section img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
