@@ -62,6 +62,12 @@
             </button>
             <span class="main__features--caption">Navbar</span>
           </figure>
+          <figure class="main__features--fig">
+            <button class="main__features--btn" data-name="carousel">
+              <ion-icon name="exit" class="main__features--icon"></ion-icon>
+            </button>
+            <span class="main__features--caption">Carousel</span>
+          </figure>
         </div>
       </div>
       <div class="ascend page hide--display" id="ascend">
@@ -453,23 +459,127 @@
         </div>
       </div>
 
-      <div class="promotion page hide--display" id="promotion">
-        <div class="promotion__move">
-          <button class="promotion__back">&leftarrow;</button>
+      <div class="carousel hide--display" id="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner home__box">
+            <div class="carousel-item active home__figure">
+              <img
+                src="Images/Cards/pic 1.jpg"
+                class="d-block w-100"
+                alt="Couple Image"
+              />
+            </div>
+            <div class="carousel-item home__figure">
+              <img
+                src="Images/Cards/pic 2.jpg"
+                class="d-block w-100"
+                alt="Couple Image"
+              />
+            </div>
+            <div class="carousel-item home__figure">
+              <img
+                src="Images/Cards/pic 3.jpg"
+                class="d-block w-100"
+                alt="Couple Image"
+              />
+            </div>
+            <div class="carousel-item home__figure">
+              <img
+                src="Images/Cards/pic 4.jpg"
+                class="d-block w-100"
+                alt="Couple Image"
+              />
+            </div>
+            <div class="carousel-item home__figure">
+              <img
+                src="Images/Cards/pic 5.jpg"
+                class="d-block w-100"
+                alt="Couple Image"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon home__btn"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon home__btn"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      
+          <div class="accordion__move">
+            <button class="promotion__goto">&downarrow;</button>
+          </div>
         </div>
-        <div class="promotion__lines">
-          <h2 class="promotion__lines--header">Add This!</h2>
-          <h2 class="promotion__lines--sub">To Your E-Invite Template</h2>
-        </div>
-        <div class="promotion__command">
-          <h2 class="promotion__command--order">Order via WhatsApp / TikTok</h2>
-          <img
-            src="Images/logo colored.png"
-            alt="Logo"
-            class="main__company--img"
-            id="logo"
-          />
-        </div>
+
+      
+    </div>
+    <div class="promotion page hide--display" id="promotion">
+      <div class="promotion__move">
+        <button class="promotion__back">&leftarrow;</button>
+      </div>
+      <div class="promotion__lines">
+        <h2 class="promotion__lines--header">Add This!</h2>
+        <h2 class="promotion__lines--sub">To Your E-Invite Template</h2>
+      </div>
+      <div class="promotion__command">
+        <h2 class="promotion__command--order">Order via WhatsApp / TikTok</h2>
+        <img
+          src="Images/logo colored.png"
+          alt="Logo"
+          class="main__company--img"
+          id="logo"
+        />
       </div>
     </div>
 

@@ -6,6 +6,7 @@ const ascendPage = document.getElementById("ascend");
 const accordionPage = document.getElementById("accordion");
 const cardsPage = document.getElementById("cards");
 const navBarPage = document.getElementById("bar");
+const carouselPage = document.getElementById("carousel");
 
 const allPages = [
   mainPage,
@@ -14,6 +15,7 @@ const allPages = [
   accordionPage,
   cardsPage,
   navBarPage,
+  carouselPage,
 ];
 
 const featuresBtn = document.querySelectorAll(".main__features--btn");
@@ -82,3 +84,5 @@ navBarLinks.forEach((link) => {
     }
   });
 });
+
+// Carousel
