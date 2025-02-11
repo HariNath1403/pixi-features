@@ -68,6 +68,15 @@
             </button>
             <span class="main__features--caption">Carousel</span>
           </figure>
+          <figure class="main__features--fig">
+            <button class="main__features--btn" data-name="charts">
+              <ion-icon
+                name="bar-chart"
+                class="main__features--icon"
+              ></ion-icon>
+            </button>
+            <span class="main__features--caption">Chart</span>
+          </figure>
         </div>
       </div>
       <div class="ascend page hide--display" id="ascend">
@@ -556,30 +565,79 @@
             ></span>
             <span class="visually-hidden">Next</span>
           </button>
-      
+
           <div class="accordion__move">
             <button class="promotion__goto">&downarrow;</button>
           </div>
         </div>
+      </div>
+      <div class="charts hide--display" id="charts">
+        <div class="wedding-card">
+          <div class="wedding-card-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h5 class="mb-2">Top Wedding Services</h5>
+                <h6 class="text-body-secondary">Last 7 days</h6>
+              </div>
+            </div>
 
-      
-    </div>
-    <div class="promotion page hide--display" id="promotion">
-      <div class="promotion__move">
-        <button class="promotion__back">&leftarrow;</button>
+            <div class="pb-4 pt-3">
+              <canvas
+                id="weddingChart"
+                style="height: 275px; width: 100%"
+              ></canvas>
+            </div>
+
+            <div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="bullet-item bg-primary me-2"></div>
+                <h6 class="text-body fw-semibold flex-grow-1 mb-0">
+                  Bridal Makeup
+                </h6>
+                <h6 class="text-body fw-semibold mb-0">40%</h6>
+              </div>
+              <div class="d-flex align-items-center mb-2">
+                <div class="bullet-item bg-success me-2"></div>
+                <h6 class="text-body fw-semibold flex-grow-1 mb-0">
+                  Venue Booking
+                </h6>
+                <h6 class="text-body fw-semibold mb-0">35%</h6>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="bullet-item bg-danger me-2"></div>
+                <h6 class="text-body fw-semibold flex-grow-1 mb-0">
+                  Catering Services
+                </h6>
+                <h6 class="text-body fw-semibold mb-0">25%</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ascend__move ascend__move--alt--1">
+          <button class="promotion__goto">&downarrow;</button>
+        </div>
       </div>
-      <div class="promotion__lines">
-        <h2 class="promotion__lines--header">Add This!</h2>
-        <h2 class="promotion__lines--sub">To Your E-Invite Template</h2>
-      </div>
-      <div class="promotion__command">
-        <h2 class="promotion__command--order">Order via WhatsApp / TikTok</h2>
-        <img
-          src="Images/logo colored.png"
-          alt="Logo"
-          class="main__company--img"
-          id="logo"
-        />
+
+      <div class="promotion page hide--display" id="promotion">
+        <div class="promotion__move">
+          <button class="promotion__back">&leftarrow;</button>
+        </div>
+        <div class="promotion__lines">
+          <h2 class="promotion__lines--header">Add This!</h2>
+          <h2 class="promotion__lines--sub">To Your E-Invite Template</h2>
+        </div>
+        <div class="promotion__command">
+          <h2 class="promotion__command--order">Order via WhatsApp / TikTok</h2>
+          <h2 class="promotion__command--order">
+            Click on the Icon below &downarrow;
+          </h2>
+          <img
+            src="Images/logo colored.png"
+            alt="Logo"
+            class="main__company--img"
+            id="logo"
+          />
+        </div>
       </div>
     </div>
 
@@ -596,6 +654,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

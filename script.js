@@ -7,6 +7,7 @@ const accordionPage = document.getElementById("accordion");
 const cardsPage = document.getElementById("cards");
 const navBarPage = document.getElementById("bar");
 const carouselPage = document.getElementById("carousel");
+const chartsPage = document.getElementById("charts");
 
 const allPages = [
   mainPage,
@@ -16,6 +17,7 @@ const allPages = [
   cardsPage,
   navBarPage,
   carouselPage,
+  chartsPage,
 ];
 
 const featuresBtn = document.querySelectorAll(".main__features--btn");
@@ -85,4 +87,25 @@ navBarLinks.forEach((link) => {
   });
 });
 
-// Carousel
+// Charts
+const ctx = document.getElementById("weddingChart").getContext("2d");
+new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["Bridal Makeup", "Venue Booking", "Catering Services"],
+    datasets: [
+      {
+        label: "Booking Percentage",
+        data: [40, 35, 25],
+        backgroundColor: ["#0d6efd", "#198754", "#dc3545"],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: { beginAtZero: true },
+    },
+  },
+});
